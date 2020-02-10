@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>jeuxjeux20</Authors>
+    <Company>jeuxjeux20</Company>
+    <Description>A library to use FaucetPaySharp with ASP.NET Core.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/jeuxjeux20/FaucetPaySharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jeuxjeux20/FaucetPaySharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <FileVersion>3.0.0.0</FileVersion>
+    <Version>3.0.0</Version>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FaucetPaySharp\FaucetPaySharp.csproj" />
+  </ItemGroup>
+</Project>

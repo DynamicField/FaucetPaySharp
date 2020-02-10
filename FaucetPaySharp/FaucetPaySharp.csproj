@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>jeuxjeux20</Authors>
+    <Company />
+    <Description>A simple API wrapper for the FaucetPay API.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/jeuxjeux20/FaucetPaySharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jeuxjeux20/FaucetPaySharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>faucetpay faucet</PackageTags>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+</Project>
