@@ -33,7 +33,21 @@ namespace FaucetPaySharp
         /// </summary>
         public const string Litecoin = "LTC";
 
+        /// <summary>
+        /// The Dash currency abbreviation.
+        /// </summary>
+        public const string Dash = "DASH";
+
+        /// <summary>
+        /// The Bitcoin Cash currency abbreviation.
+        /// </summary>
+        public const string BitcoinCash = "BCH";
+
         private readonly IRequester _requester;
+        /// <summary>
+        /// Create a new <see cref="FaucetPayClient"/> with a requester.
+        /// </summary>
+        /// <param name="requester">The requester to use.</param>
         public FaucetPayClient(IRequester requester)
         {
             _requester = requester;
@@ -56,7 +70,12 @@ namespace FaucetPaySharp
             var requester = HttpClientRequester.Create(config, client);
             return new FaucetPayClient(requester);
         }
-
+        /// <summary>
+        /// Disposes the client and its <see cref="IRequester"/>.
+        /// </summary>
+        /// <remarks>
+        /// The requester will only be disposed if it implements <see cref="IDisposable"/>
+        /// </remarks>
         public void Dispose()
         {
             if (_requester is IDisposable disposable)

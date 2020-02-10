@@ -21,7 +21,7 @@ namespace FaucetPaySharp.AspNetCore
             }
 
             public T CreateClient(HttpClient httpClient)
-            {
+            {               
                 var options = _configOptions.CurrentValue;
                 HttpClientRequester.ConfigureClient(httpClient, options);
                 return ActivatorUtilities.CreateInstance<T>(_provider, httpClient, options);
