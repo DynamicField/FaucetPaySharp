@@ -14,6 +14,7 @@ namespace FaucetPaySharp.Tests
         //    = new List<(string resource, Checker checker)>();
         private static ApiConfig WithApiKey(ApiConfig config)
         {
+            config ??= new ApiConfig();
             config.ApiKey ??= "!";
             return config;
         }
